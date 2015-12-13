@@ -41,7 +41,7 @@
       baseURL: {
         type: String,
 //        value: "https://greennav.isp.uni-luebeck.de/greennav/"
-        value: "https://localhost:8080/greennav/"
+        value: "http://localhost:8080/greennav/"
       },
       
       /**
@@ -104,8 +104,8 @@
       var ajax = document.querySelector('#route');
       ajax.url = this.baseURL +
         "vehicles/"   + this.vehicle +
-        "/routes/"    + this.startOsmId * 100 +
-        "-"           + this.targetOsmId * 100 +
+        "/routes/"    + 222581025900 // this.startOsmId * 100 +
+        "-"           + 9645405900 // this.targetOsmId * 100 +
         "/opt/energy" +
         "?battery="   + this.battery +
         "&algorithm=dijkstra";
